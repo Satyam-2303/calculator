@@ -1,14 +1,14 @@
-*{
-    outline: auto;
-}
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: whitesmoke;
     font-size: 24px;
     font-family:Helvetica, sans-serif;
 }
 .buttons{
     background-color: 36454f;
-    margin:10px;
+    margin:15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +23,9 @@ button{
     color: whitesmoke;
     width: 80px;
     height: 80px;
-    border-radius: 50px;
+    border-radius: 40px;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Roboto, sans-serif;
 }
 .calculator{
     background:rgb(0, 0, 0) ;
@@ -40,14 +40,40 @@ button{
     height: 80px;
 }
 .display{
-    margin:10px;
+    background-color: #616161;
+    margin:15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     min-height:150px;
 }
 .input{
-    min-height: 50px;;
+    min-height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color:rgb(135, 240, 240);
 }
 .output{
+    font-size: 80px;
     min-height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color:aqua;
+}
+button:hover{
+    background-color: #bdbdbd;  
+}
+.operator:hover{
+    background-color:rgb(208, 255, 0);
+}
+.equal:hover{
+    background-color: aqua;
+}
+.allClear:hover,.clear:hover{
+    background-color: red;
+}
+button,.buttons{
+    outline: auto;
 }
